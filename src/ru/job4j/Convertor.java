@@ -2,27 +2,25 @@ package ru.job4j;
 
 public class Convertor {
 
-    public static int RubleToEuro (int val){
-        int res = val / 92;
-        return res;
-    }
-
-    public  static int RubleToDollars (int val){
-        int res = val / 70;
-        return res;
-    }
-    public  static float RubToCNY (int val){
-        float res = val / 11.5f;
-        return  res;
+    public static int rubleToEuro(int val) {
+        return val / 92;
 
     }
-    public static void main (String[] args){
-        int euro = RubleToEuro(200);
-        System.out.println("The 120 rubles are "+euro+ " euros");
-        int doll = RubleToDollars(350);
-        System.out.println("The 350 rubles are "+doll+" dollars");
-        float CNY = RubToCNY((int) 457.3f);
-        System.out.println("The 481 rubles are "+CNY+" uans");
 
+    public static int rubleToDollar(int val){
+        return val / 70;
     }
+    public  static void main (String [] args){
+        int in = 200;
+        int expected = 2;
+        int out =  Convertor.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. test result: " + passed);
+        int in1 = 300;
+        int expexted1 = 4;
+        int out1 = Convertor.rubleToDollar(in1);
+        boolean res = out1 == expexted1;
+        System.out.println("300 rubles are 4 dollars. Test result is " + res);
+    }
+
 }
