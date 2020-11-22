@@ -8,7 +8,8 @@ public class Convertor {
     }
 
     public static int rubleToDollar(int val){
-        return -1;
+
+        return val/70;
     }
     public  static void main (String [] args){
         int in = 200;

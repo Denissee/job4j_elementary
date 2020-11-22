@@ -15,8 +15,6 @@ public class ConvertorTest {
         Assert.assertEquals(expected, out);
     }
 
-
-
     @Test
     public void whenConvert180Rblto3Dlr() {
 int in = 180;
