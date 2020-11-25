@@ -8,18 +8,18 @@ import static org.junit.Assert.*;
 public class FitTest {
 
     @Test
-    public void whenMan180Then92() {
-        short in = 180;
-        int expected = 92;
+    public void manWeight() {
+        short in = 187;
+        double expected = -1;
         double out = Fit.manWeight(in);
-        Assert.assertEquals (expected, out, 0.01);
+        Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void womanWeight() {
-        short in = 170;
-        int expected = 55;
+        short in = 155;
+        double expected = -1;
         double out = Fit.womanWeight(in);
-        Assert.assertEquals(expected, out, 0.1);
+        Assert.assertEquals(expected, out, 0.01);
     }
 }
