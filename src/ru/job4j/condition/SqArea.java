@@ -13,8 +13,6 @@ public class SqArea {
         double res1 = sqarea(4, 1);
         System.out.println("p=4, k=1, s=1, real=" + res1);
         double res2 = sqarea(6, 2);
-        System.out.println("p=6, k=2, S=2, real="+res2);
-
-
+        System.out.println("p=6, k=2, S=2, real=" + res2);
     }
 }
