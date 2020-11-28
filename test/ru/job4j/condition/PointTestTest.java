@@ -33,7 +33,7 @@ public class PointTestTest {
     }
     @Test
     public  void when810to612() {
-        float expected = 8.24621125f ;
+        float expected = 8.24f ;
         int x1 = 6, y1 = 10, x2 = 4, y2 = 2;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
