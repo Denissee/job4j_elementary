@@ -9,11 +9,9 @@ public class MultiMaxTest {
 
     @Test
     public void whenSecondMax() {
-        int rls = MultiMax.max(1,4,2,0);
-        assertThat(rls, is(4));
+        int wer = MultiMax.max(1,4,2,0);
+        assertThat(wer, is(4));
     }
-
-
     @Test
 public void WhenFirstMax() {
     int res = MultiMax.max(4, 2, 1, 0);
