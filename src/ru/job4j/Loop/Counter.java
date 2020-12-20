@@ -3,14 +3,14 @@ package ru.job4j.Loop;
 public class Counter {
     public static int sum(int start, int finish) {
         int sum = 0;
-        for ( start <= finish; start++) {
+        for (; start <= finish; start++) {
             sum = sum + start;
         }
         return sum;
     }
     public static int sumByeEven(int start, int finish) {
         int sum = 0;
-        for ( start <= finish; start++) {
+        for (; start <= finish; start++) {
            if (start % 2 == 0) {
                sum = sum + start;
            }
