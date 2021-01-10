@@ -5,9 +5,8 @@ public class Mortage {
         int year = 0;
         double x, y, z;
         x = percent / 100;
-        z = amount;
-        while (z > 0) {
-            z = ((x * z) + z) - salary;
+        while (amount > 0) {
+            amount = (percent / 100 * amount + amount) - salary;
            year++;
         }
         return year;
