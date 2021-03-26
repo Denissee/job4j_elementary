@@ -6,8 +6,10 @@ public class Square {
         for (int i = 0; i < rst.length; i++) {
             rst[i] = i * i;
         }
-        return  rst;
+        return rst;
     }
+
+
     public static void main(String[] args) {
         int[] array = calculate(4);
         for (int i = 0; i < array.length; i++) {
