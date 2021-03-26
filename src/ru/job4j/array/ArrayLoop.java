@@ -6,8 +6,8 @@ public class ArrayLoop {
         for (int index = 0; index < massive.length; index++) {
             massive[index] = index * 2 + 3;
         }
-        for (int index = 0; index < massive.length; index++) {
-            System.out.println(massive[index]);
+        for (int massiv : massive) {
+            System.out.println(massiv);
         }
     }
 }
