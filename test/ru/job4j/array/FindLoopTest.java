@@ -37,7 +37,7 @@ public class FindLoopTest {
 
     @Test
     public void find3() {
-        int[] data = new int[]{5, 2, 10, 2, 4};
+        int[] data = {5, 2, 10, 2, 4};
         int el = 2;
         int start = 2;
         int finish = 4;
@@ -45,14 +45,15 @@ public class FindLoopTest {
         int expected = 3;
         Assert.assertEquals(expected, result);
     }
+
     @Test
-    public void JustFind() {
+    public void whenArrayHasLength8() {
         int[] data = {34, 23, 45, 23, 96, 2, 16, 3};
         int el = 96;
         int start = 3;
         int finish = 5;
+        int result = FindLoop.indexof(data, el, start, finish);
         int expected = 4;
-        int result = FindLoop.indexof(data, el, finish, start);
         Assert.assertEquals(result, expected);
 
     }
@@ -62,6 +63,6 @@ public class FindLoopTest {
     int el = 5;
     int result = FindLoop.indexOf(data, el);
     int expected = 0;
-    Assert.assertEquals(expected, result);
+    Assert.assertEquals(result, expected);
 }
 }
