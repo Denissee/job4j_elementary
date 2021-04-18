@@ -7,9 +7,21 @@ public class MatrixCheck {
                 char all = board[row][i];
                 if (all == ' ') {
                     result = false;
+                    break;
                 }
             }
         return result;
+    }
+    public static  boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int row = 0; row < board.length; row++) {
+            if (board[row][column] == ' ') {
+                result = false;
+                break;
+
+            }
+        }
+        return  result;
     }
 }
 
