@@ -5,12 +5,12 @@ public class Defragment {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
                 int nullIndex = i; /* указатель на нулевую ячейку */
-                for (int j = i; j < array.length; j++) {
+                for (int j = i + 1; j < array.length; j++) {
                     if (array[j] != null) {   /* указывает на заполненную ячейку */
                         int notNullIndex = j;
-                        String temp = array[notNullIndex];
-                        array[notNullIndex] = array[nullIndex];
-                        array[nullIndex] = temp;
+                        array[i] = array[j];
+                        array[j] = null;
+                        break;
                     }
                 }
 
