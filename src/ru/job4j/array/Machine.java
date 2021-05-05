@@ -12,7 +12,7 @@ public class Machine {
             while (cup - coin >= 0) {
                 rsl[size] = coin;
                 size++;
-                cup -= coin; // cup = cup - coins[i]
+                cup -= coin;
             }
         }
         }
